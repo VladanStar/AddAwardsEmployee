@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" id="zaposleni">
+                <h1>Dodeljivanje nagrada zaposlenima</h1>
+
+
+                <table class=" table table-bordered" id="listaZaposlenih">
+                    <thead>
+                        <tr>
+                            <th>
+                                Ime
+                            </th>
+                            <th>
+                                Prezime
+                            </th>
+                            <th>
+                                Nagrada
+                            </th>
+                            <th>
+                                Dodeli/Oduzmi Nagradu
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="proizvodiDiv">
+                <button class="btn btn-danger" onclick="back()">Back</button>
+                <div class="form-control" style="height:200px">
+                    <select class="form-control" id="kategorije">
+
+                    </select>
+                    <input class="form-control" id="imeProizvoda">
+                    <button class="btn btn-success" onclick="findProduct()">Pretrazi</button>
+                </div>
+                <div id="listaProizvoda">
+
+                </div>
+            </div>
+        </div>
+        <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+        <script src='./main.js'></script>
+    
+</body>
+</html>
